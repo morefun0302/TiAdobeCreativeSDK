@@ -18,7 +18,7 @@ You can then open the frameworks and go into 'Resources' and copy out the `Adobe
 - Install the module locally to the app (in modules/iphone/.. in your project root folder).
 
 
-# Exmaple
+# Example
 
 ~~~
 
