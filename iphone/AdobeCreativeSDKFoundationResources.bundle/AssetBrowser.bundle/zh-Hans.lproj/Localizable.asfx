@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE asf SYSTEM "http://ns.adobe.com/asf/asf_1_0.dtd" >
+<asf xmlns="http://ns.adobe.com/asf" version="1.0" locale="zh_CN">
+
+<!--
+	ASF Features:
+		If a string should not be localized, use the translate="no" attribute
+		and it will not be changed in the localized files. translate="yes" is
+		optional; it is the default for all strings.
+
+		To send a message to the translators, add a <desc> tag before a string
+		value, such as:
+ 
+			<str name="ID">
+				<desc>Comment to the translator.</desc>
+				<val>String</val>
+			</str>
+ 
+		This is useful to provide context, the meaning of a term or variable
+		substition, translation length restrictions due to UI space, etc.
+-->
+
+<str name="IDS_CAPTION_OK" translate="yes">
+	<val>确定</val>
+</str>
+<str name="IDS_CAPTION_CLOSE" translate="yes">
+	<val>关闭</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_UNAVAILABLE" translate="yes">
+	<val>某个必需网络服务不可用。请稍后重试。</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_TIMEDOUT" translate="yes">
+	<val>某个必需网络操作超时。请稍后重试。</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_OTHER" translate="yes">
+	<val>某个必需网络服务发生错误。</val>
+</str>
+<str name="IDS_CAPTION_NO_INTERNET_CONNECTION" translate="yes">
+	<val>无 Internet 连接</val>
+</str>
+<str name="IDS_CAPTION_MY_ASSETS" translate="yes">
+    <desc>Title for the main source that is displayed in the asset browser.</desc>
+	<val>我的资源</val>
+</str>
+<str name="IDS_CAPTION_DESIGN_LIBRARIES" translate="yes">
+    <desc>Title for the Creative Cloud Libraries top-level source that is displayed in the asset browser.
+    </desc>
+	<val>我的库</val>
+</str>
+<str name="IDS_CAPTION_OPEN" translate="yes">
+	<val>打开</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION" translate="yes">
+	<val>打开选项</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION_HUNDRED" translate="yes">
+	<desc>The OPEN SELECTION string will be substituted in here.</desc>
+	<val>%@ (99+)</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION_NUMBER" translate="yes">
+	<desc>The OPEN SELECTION string will be substituted in here.</desc>
+	<val>%@ (%lu)</val>
+</str>
+<str name="IDS_CAPTION_ACCOUNT_DROPDOWN" translate="yes">
+	<val>帐户下拉列表</val>
+</str>
+<str name="IDS_CAPTION_NO_PREVIEW" translate="yes">
+	<val>没有可用的预览</val>
+</str>
+<str name="IDS_CAPTION_SEARCH_PLACEHOLDER" translate="yes">
+	<val>搜索...</val>
+</str>
+<str name="IDS_CAPTION_LAST_MODIFIED_DATE_TIME" translate="yes">
+	<desc>Placeholders for date and time.</desc>
+	<val>上次修改: %@ %@</val>
+</str>
+<str name="IDS_CAPTION_MODIFIED_DATE_TIME" translate="yes">
+	<desc>Placeholders for date and time.</desc>
+	<val>修改日期: %@ %@</val>
+</str>
+<str name="IDS_CAPTION_SWITCH_ACCOUNTS" translate="yes">
+	<val>切换帐户</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_GB_USED_PERCENTAGE" translate="yes">
+	<desc>Will be substituted with two different decimal numbers for storage space.</desc>
+	<val>已使用 %@</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_GB_USED_FRACTION" translate="yes">
+	<desc>Will be substituted with two different decimal numbers for storage space.</desc>
+	<val>(%@ / %@ GB)</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_INFO_CALCULATING_PLACEHOLDER" translate="yes">
+    <val>（正在计算容量）</val>
+</str>
+<str name="IDS_CAPTION_EDIT_SETTINGS" translate="yes">
+	<val>编辑 Creative Cloud 设置</val>
+</str>
+<str name="IDS_CAPTION_NO_SEARCH_RESULTS" translate="yes">
+	<val>此搜索未返回任何结果</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_TODAY" translate="yes">
+	<val>今日更新</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_THIS_WEEK" translate="yes">
+	<val>本周更新</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_LAST_WEEK" translate="yes">
+	<val>上周更新</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_THIS_MONTH" translate="yes">
+	<val>本月更新</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_DATE" translate="yes">
+	<desc>Will be substituted with a partial date, such as "UPDATED March 2014" or "UPDATED 2014".</desc>
+	<val>已更新 %@</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UNKNOWN_DATE" translate="yes">
+    <val>未知</val>
+</str>
+<str name="IDS_CAPTION_PAGE_NUMBER" translate="yes">
+	<desc>Used for page numbers, such as "5 of 20".</desc>
+	<val>%lu / %lu</val>
+</str>
+<str name="IDS_CAPTION_CANCEL" translate="yes">
+	<val>取消</val>
+</str>
+<str name="IDS_CAPTION_CLEAR" translate="yes">
+    <val>清除</val>
+</str>
+<str name="IDS_CAPTION_SEND" translate="yes">
+	<val>发送</val>
+</str>
+<str name="IDS_CAPTION_GET_MORE_STORAGE" translate="yes">
+	<val>获取更多存储空间</val>
+</str>
+<str name="IDS_CAPTION_CAMERA_ROLL" translate="yes">
+	<val>本机照片</val>
+</str>
+<str name="IDS_CAPTION_UPLOAD" translate="yes">
+	<val>上载</val>
+</str>
+<str name="IDS_CAPTION_TOOLBAR_CONTEXT_MENU_MY_ACCOUNT" translate="yes">
+    <desc>Menu item title for the toolbar menu on iPhone/iPod touch devices to view user's account
+        details.</desc>
+    <val>我的帐户</val>
+</str>
+<str name="IDS_CAPTION_ERROR" translate="yes">
+	<val>错误</val>
+</str>
+<str name="IDS_CAPTION_CANCEL_UPLOAD" translate="yes">
+	<val>取消上载</val>
+</str>
+<str name="IDS_CAPTION_QUOTA_EXCEEDED_TITLE" translate="yes">
+	<val>配额已超出</val>
+</str>
+<str name="IDS_CAPTION_QUOTA_EXCEEDED_MESSAGE" translate="yes">
+	<val>您已超出存储配额。</val>
+</str>
+<str name="IDS_CAPTION_DONE" translate="yes">
+	<val>完成</val>
+</str>
+<str name="IDS_CAPTION_ACCEPT_ALL" translate="yes">
+	<val>全部接受</val>
+</str>
+<str name="IDS_CAPTION_ACCEPT" translate="yes">
+	<val>接受</val>
+</str>
+<str name="IDS_CAPTION_DECLINE" translate="yes">
+	<val>拒绝</val>
+</str>
+<str name="IDS_CAPTION_SHARE" translate="yes">
+	<val>共享</val>
+</str>
+<str name="IDS_CAPTION_CANCEL_UPLOAD_MESSAGE" translate="yes">
+	<val>是否要取消上载? 已上载的文件将无法删除。</val>
+</str>
+<str name="IDS_CAPTION_YES" translate="yes">
+	<val>是</val>
+</str>
+<str name="IDS_CAPTION_NO" translate="yes">
+	<val>否</val>
+</str>
+<str name="IDS_CAPTION_LAST_UPDATED" translate="yes">
+	<val>上次更新: %@</val>
+</str>
+<str name="IDS_CAPTION_NEVER" translate="yes">
+	<val>从不</val>
+</str>
+<str name="IDS_CAPTION_LOADING_MORE_ITEMS_FAILED" translate="yes">
+    <val>载入一个或多个项目时出错。</val>
+</str>
+<str name="IDS_UPGRADE_UNSUPPORTED_URL" translate="yes">
+    <val>不支持的 URL 类型。</val>
+</str>
+<str name="IDS_CAPTION_LIST_VIEW_MULTI_SELECT_CHECKMARK" translate="yes">
+    <val>选中项</val>
+</str>
+<str name="IDS_CAPTION_SHARE_LINK" translate="yes">
+    <val>共享链接</val>
+</str>
+<str name="IDS_CAPTION_PUBLISH_TO_BEHANCE" translate="yes">
+    <val>发布到 Behance</val>
+</str>
+<str name="IDS_INFO_UPLOADED" translate="yes">
+    <desc>Labels the date that the file was uploaded.</desc>
+    <val>上载时间</val>
+</str>
+<str name="IDS_INFO_MODIFIED" translate="yes">
+    <desc>Labels the date that the file was last modified.</desc>
+    <val>修改时间</val>
+</str>
+<str name="IDS_INFO_FILE_SIZE" translate="yes">
+    <desc>Labels the size of the file.</desc>
+    <val>大小</val>
+</str>
+<str name="IDS_INFO_SIZE_BYTES" translate="yes">
+    <desc>Indicates the size of the file in bytes.</desc>
+    <val>%@字节</val>
+</str>
+<str name="IDS_INFO_SIZE_KB" translate="yes">
+    <desc>Indicates the size of the file in kilobytes.</desc>
+    <val>%@KB</val>
+</str>
+<str name="IDS_INFO_SIZE_MB" translate="yes">
+    <desc>Indicates the size of the file in megabytes.</desc>
+    <val>%@MB</val>
+</str>
+<str name="IDS_INFO_SIZE_GB" translate="yes">
+    <desc>Indicates the size of the file in gigabytes.</desc>
+    <val>%@GB</val>
+</str>
+<str name="IDS_INFO_WIDTH" translate="yes">
+    <desc>Indicates the width of the file.</desc>
+    <val>宽度</val>
+</str>
+<str name="IDS_INFO_HEIGHT" translate="yes">
+    <desc>Indicates the height of the file.</desc>
+    <val>高度</val>
+</str>
+<str name="IDS_INFO_PIXELS" translate="yes">
+    <desc>The actual width or height of the file followed by an abbreviation of pixels.</desc>
+    <val>%@像素</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_TITLE_ASSETS" translate="yes">
+    <desc>Appears as the title of the root asset browser.</desc>
+    <val>资源</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_VIEW_AS_LIST" translate="yes">
+    <desc>Option to show the list view in the main asset browser.</desc>
+    <val>按列表查看</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_VIEW_AS_GRID" translate="yes">
+    <desc>Option to show the grid view in the main asset browser.</desc>
+    <val>按网格查看</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SORT_CHRONOLOGICALLY" translate="yes">
+    <desc>Option to sort the asset list by date in the main asset browser.</desc>
+    <val>按时间排序</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SORT_ALPHABETICALLY" translate="yes">
+    <desc>Option to sort the asset list by asset name in the main asset browser.</desc>
+    <val>按字母排序</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SHOW_INCOMPATIBLE_FILES" translate="yes">
+    <desc>Option to show assets that have been excluded by a filter.</desc>
+    <val>显示不兼容文件</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SELECT_MULTIPLE" translate="yes">
+    <desc>Option to enable multi-select mode main asset browser.</desc>
+    <val>选择多个文件</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_UPLOAD_FILES" translate="yes">
+    <desc>Option that allows uploading files.</desc>
+    <val>上载文件</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for more button. Used for accesibility.</desc>
+    <val>更多按钮</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_SEARCH_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for search button. Used for accesibility.</desc>
+    <val>搜索按钮</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_IFNO_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for info button. Used for accesibility.</desc>
+    <val>信息按钮</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for account button. Used for accesibility.</desc>
+    <val>帐户按钮</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_CANCEL_BUTTON" translate="yes">
+    <desc>Cancel button that appears in the navigation bar for canceling the search mode. Title
+        Case or the appropriate equivalent.</desc>
+    <val>取消</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_FILES" translate="yes">
+    <val>文件</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_BRUSHES" translate="yes">
+    <val>画笔</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_COMPOSITIONS" translate="yes">
+    <val>作品</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_PHOTOS" translate="yes">
+    <val>照片</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_SHAPES" translate="yes">
+    <val>形状</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_SKETCHES" translate="no">
+    <val>Photoshop Sketch</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_LINE" translate="no">
+    <val>Illustrator Line</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_DRAW" translate="no">
+    <val>Illustrator Draw</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_CAMERA_ROLL" translate="yes">
+    <val>相册</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_ON_MY_DEVICE" translate="yes">
+    <desc>This string will be appened by the model of the device. So an example would be "On My
+        iPod touch"</desc>
+    <val>在我的 %@</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_NETWORK_ERROR" translate="yes">
+    <val>无法连接到 iTunes Store 获取更多存储空间。</val>
+</str>
+</asf>

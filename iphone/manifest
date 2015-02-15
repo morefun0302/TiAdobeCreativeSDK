@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: TiAdobeCreativeSDK
+author: Kosso
+license: Specify your license
+copyright: Copyright (c) 2015 by 
+
+# these should not be edited
+name: TiAdobeCreativeSDK
+moduleid: com.kosso.tiadobecreativesdk
+guid: 9d04fcbb-30af-42d3-b500-011a457cff42
+platform: iphone
+minsdk: 3.5.0.GA

@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE asf SYSTEM "http://ns.adobe.com/asf/asf_1_0.dtd" >
+<asf xmlns="http://ns.adobe.com/asf" version="1.0" locale="de_DE">
+
+<!--
+	ASF Features:
+		If a string should not be localized, use the translate="no" attribute
+		and it will not be changed in the localized files. translate="yes" is
+		optional; it is the default for all strings.
+
+		To send a message to the translators, add a <desc> tag before a string
+		value, such as:
+ 
+			<str name="ID">
+				<desc>Comment to the translator.</desc>
+				<val>String</val>
+			</str>
+ 
+		This is useful to provide context, the meaning of a term or variable
+		substition, translation length restrictions due to UI space, etc.
+-->
+
+<str name="IDS_CAPTION_OK" translate="yes">
+	<val>OK</val>
+</str>
+<str name="IDS_CAPTION_CLOSE" translate="yes">
+	<val>Schließen</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_UNAVAILABLE" translate="yes">
+	<val>Ein erforderlicher Netzwerkdienst ist nicht verfügbar. Versuchen Sie es später erneut.</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_TIMEDOUT" translate="yes">
+	<val>Ein erforderlicher Netzwerkvorgang ist abgelaufen. Versuchen Sie es später erneut.</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_OTHER" translate="yes">
+	<val>Es ist ein Fehler bei einem erforderlichen Netzwerkdienst aufgetreten.</val>
+</str>
+<str name="IDS_CAPTION_NO_INTERNET_CONNECTION" translate="yes">
+	<val>Keine Internetverbindung</val>
+</str>
+<str name="IDS_CAPTION_MY_ASSETS" translate="yes">
+    <desc>Title for the main source that is displayed in the asset browser.</desc>
+	<val>Meine Elemente</val>
+</str>
+<str name="IDS_CAPTION_DESIGN_LIBRARIES" translate="yes">
+    <desc>Title for the Creative Cloud Libraries top-level source that is displayed in the asset browser.
+    </desc>
+	<val>Meine Bibliotheken</val>
+</str>
+<str name="IDS_CAPTION_OPEN" translate="yes">
+	<val>ÖFFNEN</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION" translate="yes">
+	<val>SAMM. ÖFF</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION_HUNDRED" translate="yes">
+	<desc>The OPEN SELECTION string will be substituted in here.</desc>
+	<val>%@ (99+)</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION_NUMBER" translate="yes">
+	<desc>The OPEN SELECTION string will be substituted in here.</desc>
+	<val>%@ (%lu)</val>
+</str>
+<str name="IDS_CAPTION_ACCOUNT_DROPDOWN" translate="yes">
+	<val>Konto-Dropdown</val>
+</str>
+<str name="IDS_CAPTION_NO_PREVIEW" translate="yes">
+	<val>Keine Vorschau verfügbar</val>
+</str>
+<str name="IDS_CAPTION_SEARCH_PLACEHOLDER" translate="yes">
+	<val>Suchen...</val>
+</str>
+<str name="IDS_CAPTION_LAST_MODIFIED_DATE_TIME" translate="yes">
+	<desc>Placeholders for date and time.</desc>
+	<val>Letzte Änderung: %@ %@</val>
+</str>
+<str name="IDS_CAPTION_MODIFIED_DATE_TIME" translate="yes">
+	<desc>Placeholders for date and time.</desc>
+	<val>Geändert: %@, %@</val>
+</str>
+<str name="IDS_CAPTION_SWITCH_ACCOUNTS" translate="yes">
+	<val>Konten wechseln</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_GB_USED_PERCENTAGE" translate="yes">
+	<desc>Will be substituted with two different decimal numbers for storage space.</desc>
+	<val>%@ belegt</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_GB_USED_FRACTION" translate="yes">
+	<desc>Will be substituted with two different decimal numbers for storage space.</desc>
+	<val>(%@ von %@ GB)</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_INFO_CALCULATING_PLACEHOLDER" translate="yes">
+    <val>(Nutzung wird berechnet)</val>
+</str>
+<str name="IDS_CAPTION_EDIT_SETTINGS" translate="yes">
+	<val>Creative Cloud-Einstell. bearb.</val>
+</str>
+<str name="IDS_CAPTION_NO_SEARCH_RESULTS" translate="yes">
+	<val>Bei der Suche wurden keine Ergebnisse zurückgegeben.</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_TODAY" translate="yes">
+	<val>HEUTE AKTUALISIERT</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_THIS_WEEK" translate="yes">
+	<val>DIESE WOCHE AKTUALISIERT</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_LAST_WEEK" translate="yes">
+	<val>LETZTE WOCHE AKTUALISIERT</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_THIS_MONTH" translate="yes">
+	<val>DIESEN MONAT AKTUALISIERT</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_DATE" translate="yes">
+	<desc>Will be substituted with a partial date, such as "UPDATED March 2014" or "UPDATED 2014".</desc>
+	<val>AKTUALISIERT: %@</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UNKNOWN_DATE" translate="yes">
+    <val>UNBEKANNT</val>
+</str>
+<str name="IDS_CAPTION_PAGE_NUMBER" translate="yes">
+	<desc>Used for page numbers, such as "5 of 20".</desc>
+	<val>%lu von %lu</val>
+</str>
+<str name="IDS_CAPTION_CANCEL" translate="yes">
+	<val>ABBRECHEN</val>
+</str>
+<str name="IDS_CAPTION_CLEAR" translate="yes">
+    <val>LÖSCHEN</val>
+</str>
+<str name="IDS_CAPTION_SEND" translate="yes">
+	<val>Senden</val>
+</str>
+<str name="IDS_CAPTION_GET_MORE_STORAGE" translate="yes">
+	<val>Mehr Speicherplatz erwerben</val>
+</str>
+<str name="IDS_CAPTION_CAMERA_ROLL" translate="yes">
+	<val>Filmrolle</val>
+</str>
+<str name="IDS_CAPTION_UPLOAD" translate="yes">
+	<val>Upload</val>
+</str>
+<str name="IDS_CAPTION_TOOLBAR_CONTEXT_MENU_MY_ACCOUNT" translate="yes">
+    <desc>Menu item title for the toolbar menu on iPhone/iPod touch devices to view user's account
+        details.</desc>
+    <val>Mein Konto</val>
+</str>
+<str name="IDS_CAPTION_ERROR" translate="yes">
+	<val>Fehler</val>
+</str>
+<str name="IDS_CAPTION_CANCEL_UPLOAD" translate="yes">
+	<val>Upload abbrechen</val>
+</str>
+<str name="IDS_CAPTION_QUOTA_EXCEEDED_TITLE" translate="yes">
+	<val>Speicherkontingent wurde überschritten</val>
+</str>
+<str name="IDS_CAPTION_QUOTA_EXCEEDED_MESSAGE" translate="yes">
+	<val>Sie haben Ihr Speicherkontingent überschritten.</val>
+</str>
+<str name="IDS_CAPTION_DONE" translate="yes">
+	<val>Fertig</val>
+</str>
+<str name="IDS_CAPTION_ACCEPT_ALL" translate="yes">
+	<val>Alle akzeptieren</val>
+</str>
+<str name="IDS_CAPTION_ACCEPT" translate="yes">
+	<val>Akzeptieren</val>
+</str>
+<str name="IDS_CAPTION_DECLINE" translate="yes">
+	<val>Ablehnen</val>
+</str>
+<str name="IDS_CAPTION_SHARE" translate="yes">
+	<val>Freigeben</val>
+</str>
+<str name="IDS_CAPTION_CANCEL_UPLOAD_MESSAGE" translate="yes">
+	<val>Möchten Sie den Upload wirklich abbrechen? Bereits hochgeladene Dateien werden nicht gelöscht.</val>
+</str>
+<str name="IDS_CAPTION_YES" translate="yes">
+	<val>Ja</val>
+</str>
+<str name="IDS_CAPTION_NO" translate="yes">
+	<val>Nein</val>
+</str>
+<str name="IDS_CAPTION_LAST_UPDATED" translate="yes">
+	<val>Letzte Aktualisierung: %@</val>
+</str>
+<str name="IDS_CAPTION_NEVER" translate="yes">
+	<val>Nie</val>
+</str>
+<str name="IDS_CAPTION_LOADING_MORE_ITEMS_FAILED" translate="yes">
+    <val>Fehler beim Laden von einem oder mehreren Elementen.</val>
+</str>
+<str name="IDS_UPGRADE_UNSUPPORTED_URL" translate="yes">
+    <val>Nicht unterstützter URL-Typ.</val>
+</str>
+<str name="IDS_CAPTION_LIST_VIEW_MULTI_SELECT_CHECKMARK" translate="yes">
+    <val>Aktiviert</val>
+</str>
+<str name="IDS_CAPTION_SHARE_LINK" translate="yes">
+    <val>Freigeben-Link</val>
+</str>
+<str name="IDS_CAPTION_PUBLISH_TO_BEHANCE" translate="yes">
+    <val>Auf Behance veröffentlichen</val>
+</str>
+<str name="IDS_INFO_UPLOADED" translate="yes">
+    <desc>Labels the date that the file was uploaded.</desc>
+    <val>Hochgeladen</val>
+</str>
+<str name="IDS_INFO_MODIFIED" translate="yes">
+    <desc>Labels the date that the file was last modified.</desc>
+    <val>Geändert</val>
+</str>
+<str name="IDS_INFO_FILE_SIZE" translate="yes">
+    <desc>Labels the size of the file.</desc>
+    <val>Größe</val>
+</str>
+<str name="IDS_INFO_SIZE_BYTES" translate="yes">
+    <desc>Indicates the size of the file in bytes.</desc>
+    <val>%@Byte</val>
+</str>
+<str name="IDS_INFO_SIZE_KB" translate="yes">
+    <desc>Indicates the size of the file in kilobytes.</desc>
+    <val>%@KB</val>
+</str>
+<str name="IDS_INFO_SIZE_MB" translate="yes">
+    <desc>Indicates the size of the file in megabytes.</desc>
+    <val>%@MB</val>
+</str>
+<str name="IDS_INFO_SIZE_GB" translate="yes">
+    <desc>Indicates the size of the file in gigabytes.</desc>
+    <val>%@GB</val>
+</str>
+<str name="IDS_INFO_WIDTH" translate="yes">
+    <desc>Indicates the width of the file.</desc>
+    <val>Breite</val>
+</str>
+<str name="IDS_INFO_HEIGHT" translate="yes">
+    <desc>Indicates the height of the file.</desc>
+    <val>Höhe</val>
+</str>
+<str name="IDS_INFO_PIXELS" translate="yes">
+    <desc>The actual width or height of the file followed by an abbreviation of pixels.</desc>
+    <val>%@Px</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_TITLE_ASSETS" translate="yes">
+    <desc>Appears as the title of the root asset browser.</desc>
+    <val>Elemente</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_VIEW_AS_LIST" translate="yes">
+    <desc>Option to show the list view in the main asset browser.</desc>
+    <val>Als Liste anzeigen</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_VIEW_AS_GRID" translate="yes">
+    <desc>Option to show the grid view in the main asset browser.</desc>
+    <val>Als Raster anzeigen</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SORT_CHRONOLOGICALLY" translate="yes">
+    <desc>Option to sort the asset list by date in the main asset browser.</desc>
+    <val>Chronologisch sortieren</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SORT_ALPHABETICALLY" translate="yes">
+    <desc>Option to sort the asset list by asset name in the main asset browser.</desc>
+    <val>Alphabetisch sortieren</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SHOW_INCOMPATIBLE_FILES" translate="yes">
+    <desc>Option to show assets that have been excluded by a filter.</desc>
+    <val>Inkompatible Dateien anzeigen</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SELECT_MULTIPLE" translate="yes">
+    <desc>Option to enable multi-select mode main asset browser.</desc>
+    <val>Mehrere auswählen</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_UPLOAD_FILES" translate="yes">
+    <desc>Option that allows uploading files.</desc>
+    <val>Dateien hochladen</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for more button. Used for accesibility.</desc>
+    <val>Mehr-Schaltfläche</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_SEARCH_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for search button. Used for accesibility.</desc>
+    <val>Suchen-Schaltfläche</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_IFNO_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for info button. Used for accesibility.</desc>
+    <val>Info-Schaltfläche</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for account button. Used for accesibility.</desc>
+    <val>Konto-Schaltfläche</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_CANCEL_BUTTON" translate="yes">
+    <desc>Cancel button that appears in the navigation bar for canceling the search mode. Title
+        Case or the appropriate equivalent.</desc>
+    <val>Abbr.</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_FILES" translate="yes">
+    <val>Dateien</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_BRUSHES" translate="yes">
+    <val>Pinsel</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_COMPOSITIONS" translate="yes">
+    <val>Kompositionen</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_PHOTOS" translate="yes">
+    <val>Fotos</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_SHAPES" translate="yes">
+    <val>Formen</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_SKETCHES" translate="no">
+    <val>Photoshop Sketch</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_LINE" translate="no">
+    <val>Illustrator Line</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_DRAW" translate="no">
+    <val>Illustrator Draw</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_CAMERA_ROLL" translate="yes">
+    <val>Filmrolle</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_ON_MY_DEVICE" translate="yes">
+    <desc>This string will be appened by the model of the device. So an example would be "On My
+        iPod touch"</desc>
+    <val>Auf meinem %@</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_NETWORK_ERROR" translate="yes">
+    <val>Verbindung zum iTunes Store für mehr Speicherplatz kann nicht hergestellt werden</val>
+</str>
+</asf>

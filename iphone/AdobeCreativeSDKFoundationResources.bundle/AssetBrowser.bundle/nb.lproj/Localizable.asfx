@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE asf SYSTEM "http://ns.adobe.com/asf/asf_1_0.dtd" >
+<asf xmlns="http://ns.adobe.com/asf" version="1.0" locale="nb_NO">
+
+<!--
+	ASF Features:
+		If a string should not be localized, use the translate="no" attribute
+		and it will not be changed in the localized files. translate="yes" is
+		optional; it is the default for all strings.
+
+		To send a message to the translators, add a <desc> tag before a string
+		value, such as:
+ 
+			<str name="ID">
+				<desc>Comment to the translator.</desc>
+				<val>String</val>
+			</str>
+ 
+		This is useful to provide context, the meaning of a term or variable
+		substition, translation length restrictions due to UI space, etc.
+-->
+
+<str name="IDS_CAPTION_OK" translate="yes">
+	<val>OK</val>
+</str>
+<str name="IDS_CAPTION_CLOSE" translate="yes">
+	<val>Lukk</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_UNAVAILABLE" translate="yes">
+	<val>En nødvendig nettverkstjeneste er utilgjengelig. Prøv igjen senere.</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_TIMEDOUT" translate="yes">
+	<val>En nødvendig nettverksfunksjon fikk tidsavbrudd. Vennligst prøv igjen senere.</val>
+</str>
+<str name="IDS_CAPTION_NETWORK_ERROR_CODE_OTHER" translate="yes">
+	<val>En nødvendig nettverkstjeneste hadde en feil.</val>
+</str>
+<str name="IDS_CAPTION_NO_INTERNET_CONNECTION" translate="yes">
+	<val>Ingen Internett-forbindelse</val>
+</str>
+<str name="IDS_CAPTION_MY_ASSETS" translate="yes">
+    <desc>Title for the main source that is displayed in the asset browser.</desc>
+	<val>Mine eiendeler</val>
+</str>
+<str name="IDS_CAPTION_DESIGN_LIBRARIES" translate="yes">
+    <desc>Title for the Creative Cloud Libraries top-level source that is displayed in the asset browser.
+    </desc>
+	<val>Mine biblioteker</val>
+</str>
+<str name="IDS_CAPTION_OPEN" translate="yes">
+	<val>ÅPNE</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION" translate="yes">
+	<val>ÅPNE UTVALG</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION_HUNDRED" translate="yes">
+	<desc>The OPEN SELECTION string will be substituted in here.</desc>
+	<val>%@ (99+)</val>
+</str>
+<str name="IDS_CAPTION_OPEN_SELECTION_NUMBER" translate="yes">
+	<desc>The OPEN SELECTION string will be substituted in here.</desc>
+	<val>%@ (%lu)</val>
+</str>
+<str name="IDS_CAPTION_ACCOUNT_DROPDOWN" translate="yes">
+	<val>Kontovalg</val>
+</str>
+<str name="IDS_CAPTION_NO_PREVIEW" translate="yes">
+	<val>Forhåndsvisning ikke tilgjengelig</val>
+</str>
+<str name="IDS_CAPTION_SEARCH_PLACEHOLDER" translate="yes">
+	<val>Søk...</val>
+</str>
+<str name="IDS_CAPTION_LAST_MODIFIED_DATE_TIME" translate="yes">
+	<desc>Placeholders for date and time.</desc>
+	<val>Sist endret: %@ kl. %@</val>
+</str>
+<str name="IDS_CAPTION_MODIFIED_DATE_TIME" translate="yes">
+	<desc>Placeholders for date and time.</desc>
+	<val>Endret: %@ kl. %@</val>
+</str>
+<str name="IDS_CAPTION_SWITCH_ACCOUNTS" translate="yes">
+	<val>Bytt kontoer</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_GB_USED_PERCENTAGE" translate="yes">
+	<desc>Will be substituted with two different decimal numbers for storage space.</desc>
+	<val>%@ brukt</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_GB_USED_FRACTION" translate="yes">
+	<desc>Will be substituted with two different decimal numbers for storage space.</desc>
+	<val>(%@ av %@GB)</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_INFO_CALCULATING_PLACEHOLDER" translate="yes">
+    <val>(Beregner bruk)</val>
+</str>
+<str name="IDS_CAPTION_EDIT_SETTINGS" translate="yes">
+	<val>Rediger Creative Cloud-innst.</val>
+</str>
+<str name="IDS_CAPTION_NO_SEARCH_RESULTS" translate="yes">
+	<val>Dette søket ga ingen resultater</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_TODAY" translate="yes">
+	<val>OPPDATERT I DAG</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_THIS_WEEK" translate="yes">
+	<val>OPPDATERT DENNE UKEN</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_LAST_WEEK" translate="yes">
+	<val>OPPDATERT FORRIGE UKE</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_THIS_MONTH" translate="yes">
+	<val>OPPDATERT DENNE MÅNEDEN</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UPDATED_DATE" translate="yes">
+	<desc>Will be substituted with a partial date, such as "UPDATED March 2014" or "UPDATED 2014".</desc>
+	<val>OPPDATERT %@</val>
+</str>
+<str name="IDS_CAPTION_COLLATION_UNKNOWN_DATE" translate="yes">
+    <val>UKJENT</val>
+</str>
+<str name="IDS_CAPTION_PAGE_NUMBER" translate="yes">
+	<desc>Used for page numbers, such as "5 of 20".</desc>
+	<val>%lu av %lu</val>
+</str>
+<str name="IDS_CAPTION_CANCEL" translate="yes">
+	<val>AVBRYT</val>
+</str>
+<str name="IDS_CAPTION_CLEAR" translate="yes">
+    <val>TØM</val>
+</str>
+<str name="IDS_CAPTION_SEND" translate="yes">
+	<val>Send</val>
+</str>
+<str name="IDS_CAPTION_GET_MORE_STORAGE" translate="yes">
+	<val>Få mer lagringsplass</val>
+</str>
+<str name="IDS_CAPTION_CAMERA_ROLL" translate="yes">
+	<val>Kamerarull</val>
+</str>
+<str name="IDS_CAPTION_UPLOAD" translate="yes">
+	<val>Last opp</val>
+</str>
+<str name="IDS_CAPTION_TOOLBAR_CONTEXT_MENU_MY_ACCOUNT" translate="yes">
+    <desc>Menu item title for the toolbar menu on iPhone/iPod touch devices to view user's account
+        details.</desc>
+    <val>Min konto</val>
+</str>
+<str name="IDS_CAPTION_ERROR" translate="yes">
+	<val>Feil</val>
+</str>
+<str name="IDS_CAPTION_CANCEL_UPLOAD" translate="yes">
+	<val>Avbryt opplasting</val>
+</str>
+<str name="IDS_CAPTION_QUOTA_EXCEEDED_TITLE" translate="yes">
+	<val>Kvote overskredet</val>
+</str>
+<str name="IDS_CAPTION_QUOTA_EXCEEDED_MESSAGE" translate="yes">
+	<val>Du har overskredet lagringskvoten.</val>
+</str>
+<str name="IDS_CAPTION_DONE" translate="yes">
+	<val>Ferdig</val>
+</str>
+<str name="IDS_CAPTION_ACCEPT_ALL" translate="yes">
+	<val>Godta alle</val>
+</str>
+<str name="IDS_CAPTION_ACCEPT" translate="yes">
+	<val>Godta</val>
+</str>
+<str name="IDS_CAPTION_DECLINE" translate="yes">
+	<val>Avslå</val>
+</str>
+<str name="IDS_CAPTION_SHARE" translate="yes">
+	<val>Del</val>
+</str>
+<str name="IDS_CAPTION_CANCEL_UPLOAD_MESSAGE" translate="yes">
+	<val>Er du sikker på at du vil avbryte opplastingen? Filer som allerede er lastet opp vil ikke bli slettet.</val>
+</str>
+<str name="IDS_CAPTION_YES" translate="yes">
+	<val>Ja</val>
+</str>
+<str name="IDS_CAPTION_NO" translate="yes">
+	<val>Nei</val>
+</str>
+<str name="IDS_CAPTION_LAST_UPDATED" translate="yes">
+	<val>Sist oppdatert: %@</val>
+</str>
+<str name="IDS_CAPTION_NEVER" translate="yes">
+	<val>Aldri</val>
+</str>
+<str name="IDS_CAPTION_LOADING_MORE_ITEMS_FAILED" translate="yes">
+    <val>Det skjedde en feil ved innlasting av elementer.</val>
+</str>
+<str name="IDS_UPGRADE_UNSUPPORTED_URL" translate="yes">
+    <val>URL-typen støttes ikke.</val>
+</str>
+<str name="IDS_CAPTION_LIST_VIEW_MULTI_SELECT_CHECKMARK" translate="yes">
+    <val>Sjekk element</val>
+</str>
+<str name="IDS_CAPTION_SHARE_LINK" translate="yes">
+    <val>Del kobling</val>
+</str>
+<str name="IDS_CAPTION_PUBLISH_TO_BEHANCE" translate="yes">
+    <val>Publiser på Behance</val>
+</str>
+<str name="IDS_INFO_UPLOADED" translate="yes">
+    <desc>Labels the date that the file was uploaded.</desc>
+    <val>Lastet opp</val>
+</str>
+<str name="IDS_INFO_MODIFIED" translate="yes">
+    <desc>Labels the date that the file was last modified.</desc>
+    <val>Endret</val>
+</str>
+<str name="IDS_INFO_FILE_SIZE" translate="yes">
+    <desc>Labels the size of the file.</desc>
+    <val>Størrelse</val>
+</str>
+<str name="IDS_INFO_SIZE_BYTES" translate="yes">
+    <desc>Indicates the size of the file in bytes.</desc>
+    <val>%@ byte</val>
+</str>
+<str name="IDS_INFO_SIZE_KB" translate="yes">
+    <desc>Indicates the size of the file in kilobytes.</desc>
+    <val>%@KB</val>
+</str>
+<str name="IDS_INFO_SIZE_MB" translate="yes">
+    <desc>Indicates the size of the file in megabytes.</desc>
+    <val>%@MB</val>
+</str>
+<str name="IDS_INFO_SIZE_GB" translate="yes">
+    <desc>Indicates the size of the file in gigabytes.</desc>
+    <val>%@GB</val>
+</str>
+<str name="IDS_INFO_WIDTH" translate="yes">
+    <desc>Indicates the width of the file.</desc>
+    <val>Bredde</val>
+</str>
+<str name="IDS_INFO_HEIGHT" translate="yes">
+    <desc>Indicates the height of the file.</desc>
+    <val>Høyde</val>
+</str>
+<str name="IDS_INFO_PIXELS" translate="yes">
+    <desc>The actual width or height of the file followed by an abbreviation of pixels.</desc>
+    <val>%@px</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_TITLE_ASSETS" translate="yes">
+    <desc>Appears as the title of the root asset browser.</desc>
+    <val>Eiendeler</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_VIEW_AS_LIST" translate="yes">
+    <desc>Option to show the list view in the main asset browser.</desc>
+    <val>Vis som liste</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_VIEW_AS_GRID" translate="yes">
+    <desc>Option to show the grid view in the main asset browser.</desc>
+    <val>Vis som rutenett</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SORT_CHRONOLOGICALLY" translate="yes">
+    <desc>Option to sort the asset list by date in the main asset browser.</desc>
+    <val>Sorter kronologisk</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SORT_ALPHABETICALLY" translate="yes">
+    <desc>Option to sort the asset list by asset name in the main asset browser.</desc>
+    <val>Sorter alfabetisk</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SHOW_INCOMPATIBLE_FILES" translate="yes">
+    <desc>Option to show assets that have been excluded by a filter.</desc>
+    <val>Vis inkompatible filer</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_SELECT_MULTIPLE" translate="yes">
+    <desc>Option to enable multi-select mode main asset browser.</desc>
+    <val>Velg flere</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_POPOVER_UPLOAD_FILES" translate="yes">
+    <desc>Option that allows uploading files.</desc>
+    <val>Last opp filer</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_MORE_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for more button. Used for accesibility.</desc>
+    <val>Mer-knapp</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_SEARCH_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for search button. Used for accesibility.</desc>
+    <val>Søk-knapp</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_IFNO_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for info button. Used for accesibility.</desc>
+    <val>Info-knapp</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_ACCOUNT_BUTTON_ACCESSIBILITY_LABEL" translate="yes">
+    <desc>Title for account button. Used for accesibility.</desc>
+    <val>Konto-knapp</val>
+</str>
+<str name="IDS_CAPTION_NAVIGATION_BAR_CANCEL_BUTTON" translate="yes">
+    <desc>Cancel button that appears in the navigation bar for canceling the search mode. Title
+        Case or the appropriate equivalent.</desc>
+    <val>Avbryt</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_FILES" translate="yes">
+    <val>Filer</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_BRUSHES" translate="yes">
+    <val>Pensler</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_COMPOSITIONS" translate="yes">
+    <val>Komposisjoner</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_PHOTOS" translate="yes">
+    <val>Fotografier</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_SHAPES" translate="yes">
+    <val>Former</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_SKETCHES" translate="no">
+    <val>Photoshop Sketch</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_LINE" translate="no">
+    <val>Illustrator Line</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_DRAW" translate="no">
+    <val>Illustrator Draw</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_CAMERA_ROLL" translate="yes">
+    <val>Kamerarull</val>
+</str>
+<str name="IDS_CAPTION_SOURCE_TYPE_SELECTION_POPOVER_ON_MY_DEVICE" translate="yes">
+    <desc>This string will be appened by the model of the device. So an example would be "On My
+        iPod touch"</desc>
+    <val>På %@</val>
+</str>
+<str name="IDS_CAPTION_STORAGE_NETWORK_ERROR" translate="yes">
+    <val>Kan ikke koble til iTunes Store for å skaffe mer lagringsplass.</val>
+</str>
+</asf>
