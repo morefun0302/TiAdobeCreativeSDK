@@ -1,151 +1,62 @@
-Appcelerator Titanium iPhone Module Project
-===========================================
+# TiAdobeCreativeSDK
+Titanium Module for photo editing using the Adobe Creative SDK (was the Aviary SDK).
 
-This is a skeleton Titanium Mobile iPhone module project.  Modules can be 
-used to extend the functionality of Titanium by providing additional native
-code that is compiled into your application at build time and can expose certain
-APIs into JavaScript. 
+Based on work by [@ludolphus](https://github.com/ludolphus/AviaryModule), [@alexshive](https://github.com/alexshive/AviaryModule), [@ghkim](https://github.com/ghkim/AviaryModule) and [@frederictedesco](https://github.com/frederictedesco/Adobe-Creative-Image-module-for-Titanium) (for the latest Adobe update)
 
-MODULE NAMING
---------------
-
-Choose a unique module id for your module.  This ID usually follows a namespace
-convention using DNS notation.  For example, com.appcelerator.module.test.  This
-ID can only be used once by all public modules in Titanium.
+I was getting some build errors (on the module at first, then the app) so decided to start from scratch and rename. 
 
 
-COMPONENTS
------------
+- Added the Frameworks to the XCode project
+- Extracted the CreativeSDK Foundation and Image framework .bundle files for Titanium app resources.  (Copy to platform/iphone/.. in your project root folder).
 
-Components that are exposed by your module must follow a special naming convention.
-A component (widget, proxy, etc) must be named with the pattern:
+You will need to download the Adobe Creative SDK from https://creativesdk.adobe.com/downloads.html  (It's too big for github). Then copy the `AdobeCreativeSDKFoundation.framework` and `AdobeCreativeSDKImage.framework` files into the iphone folder to build the module. 
 
-	Ti<ModuleName><ComponentName>Proxy
+You can then open the frameworks and go into 'Resources' and copy out the `AdobeCreativeSDKFoundationResources.bundle` and `AdobeCreativeSDKImageResources.bundle` files which need to be placed in your APP_Project/platform/iphone folder for your app. 
 
-For example, if you component was called Foo, your proxy would be named:
+- You will also need to edit the module.xconfig file to locate the Adobe Frameworks. 
 
-	TiMyfirstFooProxy
-	
-For view proxies or widgets, you must create both a view proxy and a view implementation. 
-If you widget was named proxy, you would create the following files:
-
-	TiMyfirstFooProxy.h
-	TiMyfirstFooProxy.m
-	TiMyfirstFoo.h
-	TiMyfirstFoo.m
-	
-The view implementation is named the same except it does contain the suffix `Proxy`.  
-
-View implementations extend the Titanium base class `TiUIView`.  View Proxies extend the
-Titanium base class `TiUIViewProxy` or `TiUIWidgetProxy`.  
-
-For proxies that are simply native objects that can be returned to JavaScript, you can 
-simply extend `TiProxy` and no view implementation is required.
+- Install the module locally to the app (in modules/iphone/.. in your project root folder).
 
 
-GET STARTED
-------------
+# Exmaple
 
-1. Edit manifest with the appropriate details about your module.
-2. Edit LICENSE to add your license details.
-3. Place any assets (such as PNG files) that are required in the assets folder.
-4. Edit the titanium.xcconfig and make sure you're building for the right Titanium version.
-5. Code and build.
+~~~
 
-BUILD TIME COMPILER CONFIG
---------------------------
+var photo_editor = require("com.kosso.tiadobecreativesdk");
 
-You can edit the file `module.xcconfig` to include any build time settings that should be
-set during application compilation that your module requires.  This file will automatically get `#include` in the main application project.  
+var image_blob = [ A TiBlob from the camera or album, for example ];
 
-For more information about this file, please see the Apple documentation at:
+var edited_image;
 
-<http://developer.apple.com/mac/library/documentation/DeveloperTools/Conceptual/XcodeBuildSystem/400-Build_Configurations/build_configs.html>
+// Editor tool options.
+var tools = ['kAFEffects','kAFEnhance','kAFOrientation','kAFAdjust', 'kAFCrop','kAFSharpness','kAFText','kAFStickers','kAFDraw','kAFMeme','kAFFrames','kAFFocus'];
 
+// Obtain an App Client ID from Adode https://creativesdk.adobe.com/myapps.html  - You will need an Adobe ID. 
 
-DOCUMENTATION FOR YOUR MODULE
------------------------------
+var adobe_client_id = 'YOUR_ADOBE_CREATIVE_SDK_CLIENT_ID';
+var adobe_client_secret = 'YOUR_ADOBE_CREATIVE_SDK_CLIENT_SECRET';
 
-You should provide at least minimal documentation for your module in `documentation` folder using the Markdown syntax.
+// Open the image in the Adobe CreativeSDK Image Editor
+photo_editor.newImageEditor({apikey:adobe_client_id, secret: adobe_client_secret, image: image_blob, tools: tools});
+ 
+// Fired when the editor is done 
+photo_editor.addEventListener('avEditorFinished', function(e){
 
-For more information on the Markdown syntax, refer to this documentation at:
+	Ti.API.info('avEditorFinished done: '+e.image);
+	Ti.API.info('avEditorFinished size: '+e.image.length);
 
-<http://daringfireball.net/projects/markdown/>
+	if(e.image.length==0){
+		Ti.API.info('photo editor ERROR!');
+		return;
+	}
 
+	setTimeout(function(){
+		edited_image = e.image;
+		photo_editor = null;
+	},150);		
+});
 
-TEST HARNESS EXAMPLE FOR YOUR MODULE
-------------------------------------
-
-The `example` directory contains a skeleton application test harness that can be 
-used for testing and providing an example of usage to the users of your module.
-
-
-INSTALL YOUR MODULE
---------------------
-
-1. Run `build.py` which creates your distribution
-2. cd to `/Library/Application Support/Titanium`
-3. copy this zip file into the folder of your Titanium SDK
-
-REGISTER YOUR MODULE
----------------------
-
-Register your module with your application by editing `tiapp.xml` and adding your module.
-Example:
-
-<modules>
-	<module version="0.1">__MODULE_ID__</module>
-</modules>
-
-When you run your project, the compiler will know automatically compile in your module
-dependencies and copy appropriate image assets into the application.
-
-USING YOUR MODULE IN CODE
--------------------------
-
-To use your module in code, you will need to require it. 
-
-For example,
-
-	var my_module = require('__MODULE_ID__');
-	my_module.foo();
-
-WRITING PURE JS NATIVE MODULES
-------------------------------
-
-You can write a pure JavaScript "natively compiled" module.  This is nice if you
-want to distribute a JS module pre-compiled.
-
-To create a module, create a file named __MODULE_ID__.js under the assets folder.
-This file must be in the Common JS format.  For example:
-
-	exports.echo = function(s)
-	{
-		return s;
-	};
-	
-Any functions and properties that are exported will be made available as part of your
-module.  All other code inside your JS will be private to your module.
-
-For pure JS module, you don't need to modify any of the Objective-C module code. You
-can leave it as-is and build.
-
-TESTING YOUR MODULE
--------------------
-
-Run the `titanium.py` script to test your module or test from within XCode.
-To test with the script, execute:
-
-	titanium run --dir=YOURMODULEDIR
-	
-
-This will execute the app.js in the example folder as a Titanium application.
+~~~
 
 
-DISTRIBUTING YOUR MODULE
--------------------------
 
-Currently, you will need to manually distribution your module distribution zip file directly. However, in the near future, we will make module distribution and sharing built-in to Titanium Developer and in the Titanium Marketplace!
-
-
-Cheers!
