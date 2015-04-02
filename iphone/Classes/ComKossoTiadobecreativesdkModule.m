@@ -11,7 +11,7 @@
 #import "TiHost.h"
 #import "TiUtils.h"
 #import "TiApp.h"
-#import <AdobeCreativeSDKFoundation/AdobeCreativeSDKFoundation.h>
+#import <AdobeCreativeSDKFoundation/AdobeUXAuthManager.h>
 
 @implementation ComKossoTiadobecreativesdkModule
 
@@ -129,11 +129,11 @@
     return tools;
 }
 
--(void)newEditorController:(UIImage *)source withTools:(NSArray *)toolKey animated:(BOOL)animated purge:(BOOL)purge
+-(void)newEditorController:(UIImage *)source withTools:(NSArray *)toolKey animated:(BOOL)animated purge:(BOOL)purge hires:(BOOL)hires
 {
     
     NSArray *tools = [self convertToRealToolsKey:toolKey];
-    editorController = [[AFPhotoEditorController alloc]
+    editorController = [[AdobeUXImageEditorViewController alloc]
                         initWithImage:source
                         ];
     [AdobeImageEditorCustomization setToolOrder:tools];
@@ -141,7 +141,21 @@
         [AdobeImageEditorCustomization purgeGPUMemoryWhenPossible:YES];
     }
     
-    [editorController setDelegate:self];
+    if (hires) {
+        [editorController setDelegate:nil];
+        id<AdobeImageEditorRender> render = [editorController enqueueHighResolutionRenderWithImage:source maximumSize:CGSizeMake(2048,1536) completion:^(UIImage *result, NSError *error) {
+            if (result) {
+                [self fireEvent:@"avResolutionFinished" withObject:[self convertResultDic:result]];
+                [editorController dismissViewControllerAnimated:animated completion:nil];
+            }
+            else {
+                NSLog(@"[INFO] High-res render failed with error : %@", error);
+            }
+        }];
+    }
+    else {
+        [editorController setDelegate:self];
+    }
 
     [[TiApp app] showModalController: editorController animated: animated];
 }
@@ -161,19 +175,20 @@
     // Set Supported Orientations
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         NSArray * supportedOrientations = @[@(UIInterfaceOrientationPortrait), @(UIInterfaceOrientationPortraitUpsideDown), @(UIInterfaceOrientationLandscapeLeft), @(UIInterfaceOrientationLandscapeRight)];
-        [AFPhotoEditorCustomization setSupportedIpadOrientations:supportedOrientations];
+        [AdobeImageEditorCustomization setSupportedIpadOrientations:supportedOrientations];
     }
     
     UIImage *source = [self convertToUIImage:[params objectForKey:@"image"]];
     NSArray *tools = [NSArray arrayWithArray:(NSArray *)[params objectForKey:@"tools"]];
     BOOL animated = [TiUtils boolValue:@"animated" properties:params def:NO];
     BOOL purge = [TiUtils boolValue:@"purge" properties:params def:NO];
-    [self newEditorController:source withTools:tools animated:animated purge:purge];
+    BOOL hires = [TiUtils boolValue:@"hires" properties:params def:NO];
+    [self newEditorController:source withTools:tools animated:animated purge:purge hires:hires];
 }
 
 #define view_parentViewController(_view_) (([_view_ parentViewController] != nil || ![_view_ respondsToSelector:@selector(presentingViewController)]) ? [_view_ parentViewController] : [_view_ presentingViewController])
 
--(void)photoEditor:(AFPhotoEditorController *)editor finishedWithImage:(UIImage *)image
+-(void)photoEditor:(AdobeUXImageEditorViewController *)editor finishedWithImage:(UIImage *)image
 {
     [self fireEvent:@"avEditorFinished" withObject:[self convertResultDic:image]];
     
@@ -187,7 +202,7 @@
     [editor release];
 }
 
--(void)photoEditorCanceled:(AFPhotoEditorController *)editor
+-(void)photoEditorCanceled:(AdobeUXImageEditorViewController *)editor
 {
     
     [self fireEvent:@"avEditorCancel" withObject:nil];
